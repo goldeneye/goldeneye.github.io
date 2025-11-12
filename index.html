@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tim Golden - Compliance & Cybersecurity Expert | Award-Winning Industry Speaker | MSP Solutions">
+    <meta name="author" content="Tim Golden - Compliance & Cybersecurity Expert">
+    <title>Tim Golden - GitHub Projects</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-color: #0d6efd;
+            --dark-bg: #1a1a2e;
+            --card-bg: #16213e;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #f0f0f0;
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .hero-section {
+            padding: 4rem 0 3rem;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-section .lead {
+            font-size: 1.3rem;
+            color: #a0a0a0;
+            margin-bottom: 2rem;
+        }
+
+        .awards {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .award-badge {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 1rem 1.5rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .award-badge i {
+            color: #ffd700;
+            font-size: 1.5rem;
+            margin-right: 0.5rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: #fff;
+        }
+
+        .repo-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .repo-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+            box-shadow: 0 10px 30px rgba(13, 110, 253, 0.3);
+        }
+
+        .repo-card h3 {
+            color: #fff;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .repo-card h3 i {
+            color: var(--primary-color);
+            margin-right: 0.5rem;
+        }
+
+        .repo-card p {
+            color: #c0c0c0;
+            margin-bottom: 1.5rem;
+        }
+
+        .repo-card .btn {
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+
+        .stat-card h4 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-card p {
+            color: #a0a0a0;
+            margin: 0;
+        }
+
+        .contact-section {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 3rem;
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            color: #fff;
+            font-size: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--primary-color);
+            transform: scale(1.2);
+        }
+
+        .support-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #a0a0a0;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+
+            .hero-section .lead {
+                font-size: 1.1rem;
+            }
+
+            .awards {
+                gap: 1rem;
+            }
+
+            .award-badge {
+                padding: 0.75rem 1rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <h1><i class="fas fa-code"></i> Tim Golden</h1>
+            <p class="lead">Compliance & Cybersecurity Expert | Award-Winning Industry Speaker</p>
+            <p class="text-muted">20+ years helping MSPs with compliance, cybersecurity, and risk management</p>
+
+            <div class="awards">
+                <div class="award-badge">
+                    <i class="fas fa-trophy"></i>
+                    <span>2024 CompTIA Cybersecurity Leadership Award</span>
+                </div>
+                <div class="award-badge">
+                    <i class="fas fa-trophy"></i>
+                    <span>CANIT Community Engagement Award</span>
+                </div>
+                <div class="award-badge">
+                    <i class="fas fa-microphone"></i>
+                    <span>Award-Winning Industry Speaker</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h4><i class="fas fa-shield-alt"></i></h4>
+                <p>Security & Compliance Expert</p>
+            </div>
+            <div class="stat-card">
+                <h4>20+</h4>
+                <p>Years of Experience</p>
+            </div>
+            <div class="stat-card">
+                <h4><i class="fas fa-users"></i></h4>
+                <p>Helping MSPs Succeed</p>
+            </div>
+            <div class="stat-card">
+                <h4><i class="fas fa-code-branch"></i></h4>
+                <p>Open Source Projects</p>
+            </div>
+        </div>
+
+        <!-- Public Repositories Section -->
+        <section class="repositories-section">
+            <h2 class="section-title"><i class="fab fa-github"></i> Public Repositories</h2>
+
+            <!-- Claude Code Baseline Repository -->
+            <div class="repo-card">
+                <h3><i class="fas fa-robot"></i> Claude Code Baseline</h3>
+                <p>
+                    Comprehensive engineering baseline documentation pack for Claude Code. Includes 10+ documentation templates,
+                    13 modular coding standards, 10 specialized AI agents, and automation scripts for bootstrapping new projects.
+                    Built from 20+ years of compliance and cybersecurity expertise.
+                </p>
+                <p class="mb-3">
+                    <span class="badge bg-primary me-2">Documentation</span>
+                    <span class="badge bg-success me-2">AI Agents</span>
+                    <span class="badge bg-info me-2">Automation</span>
+                    <span class="badge bg-warning text-dark me-2">PowerShell</span>
+                    <span class="badge bg-secondary">Python</span>
+                </p>
+                <a href="https://github.com/goldeneye/claude_code_baseline" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-github"></i> View Repository
+                </a>
+                <a href="https://goldeneye.github.io/claude_code_baseline/" target="_blank" class="btn btn-outline-light">
+                    <i class="fas fa-book"></i> Documentation Site
+                </a>
+                <a href="https://goldeneye.github.io/claude_code_baseline/getting-started.html" target="_blank" class="btn btn-outline-success">
+                    <i class="fas fa-rocket"></i> Get Started
+                </a>
+            </div>
+
+            <!-- Placeholder for other public repos -->
+            <div class="repo-card" style="opacity: 0.6;">
+                <h3><i class="fas fa-ellipsis-h"></i> More Projects Coming Soon</h3>
+                <p>Additional public repositories and projects will be listed here as they become available.</p>
+                <a href="https://github.com/goldeneye?tab=repositories" target="_blank" class="btn btn-outline-light">
+                    <i class="fab fa-github"></i> View All Repositories
+                </a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <h2 class="section-title"><i class="fas fa-envelope"></i> Get In Touch</h2>
+            <p class="lead">Questions? Want to collaborate? Need access to private repositories?</p>
+
+            <div class="d-flex justify-content-center gap-3 my-4 flex-wrap">
+                <a href="https://timgolden.com/contact/" target="_blank" class="btn btn-primary btn-lg">
+                    <i class="fas fa-envelope"></i> Contact Me
+                </a>
+                <a href="https://timgolden.com" target="_blank" class="btn btn-outline-light btn-lg">
+                    <i class="fas fa-globe"></i> Visit Website
+                </a>
+            </div>
+
+            <div class="social-links">
+                <a href="https://linkedin.com/in/timothygolden" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/goldeneye" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://x.com/ComplianceScore" target="_blank" title="X/Twitter">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="https://www.youtube.com/@compliancescorecard" target="_blank" title="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.instagram.com/compliancescorecard/" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Support Section -->
+        <section class="support-section">
+            <h2 class="mb-3"><i class="fas fa-coffee"></i> Support My Work</h2>
+            <p class="lead mb-4">
+                If my projects and resources help you, consider buying me a coffee or becoming a sponsor!
+            </p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="https://github.com/sponsors/goldeneye" target="_blank" class="btn btn-light btn-lg">
+                    <i class="fas fa-heart"></i> GitHub Sponsors
+                </a>
+                <a href="https://www.paypal.com/ncp/payment/YFWBHYVM9SZQJ" target="_blank" class="btn btn-light btn-lg">
+                    <i class="fab fa-paypal"></i> PayPal Donation
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025 Tim Golden | Dover, NH | All Rights Reserved</p>
+            <p class="small">
+                Built with <i class="fas fa-robot text-primary"></i> <a href="https://claude.ai/code" target="_blank" class="text-light">Claude Code</a>
+            </p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
