@@ -13,8 +13,8 @@ This is the landing page for https://goldeneye.github.io/
 
 ## Projects Featured
 
-- **[Claude Code Baseline](https://github.com/goldeneye/claude_code_baseline)** - Engineering baseline documentation pack with AI agents, coding standards, and automation scripts
-  - [Documentation Site](https://goldeneye.github.io/claude_code_baseline/)
+- **[Claude Code Baseline](https://github.com/goldeneye/claude-code-baseline)** - Engineering baseline documentation pack with AI agents, coding standards, and automation scripts
+  - [Documentation Site](https://goldeneye.github.io/claude-code-baseline/)
 
 ## About
 
